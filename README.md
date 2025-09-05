@@ -57,7 +57,7 @@ Se importaron las fuentes "Playfair Display" para los encabezados y "Lato" para 
 
 ## 🔧2.4.   `JavaScript Vanilla`
 
-Usamos **JavaScript puro** para la interactividad del sitio, incluyendo la navegación del menú móvil y la inserción dinámica de contenido. Mantener el proyecto sin librerías adicionales lo hace **ligero** y de **alto rendimiento**.
+Se utiliza JavaScript puro, sin bibliotecas adicionales como jQuery, para la interactividad del sitio. Esto incluye funcionalidades como la navegación responsiva para el menú móvil y la inserción dinámica de las tarjetas del menú y los modales de recetas. El uso de JavaScript puro mantiene el proyecto ligero y con un rendimiento óptimo.
 
 ---
 
@@ -92,7 +92,7 @@ Se implementa una animación suave para el menú y las recetas. Al interactuar c
 ---
 # 📽️5. FUNCIONALIDAD E INTERACTIVIDAD (scripts.js)
 
-El diseño visual del sitio se gestiona a través de la hoja de estilos style.css y el uso del framework Tailwind CSS. Esta combinación permite un desarrollo rápido y un estilo consistente.
+El archivo scripts.js es el motor de la página, proporcionando la lógica necesaria para las funciones interactivas.
 
 ##  📼5.1.  `Modal de Pedido`
 Al hacer clic en el botón "Pedir" de cualquier plato, se activa una función que muestra un modal de confirmación. Este modal incluye un mensaje personalizado con el nombre del plato, lo que mejora la retroalimentación al usuario.
@@ -104,6 +104,7 @@ La función toggleRecipe() gestiona la visibilidad de las recetas. Al hacer clic
 # 💡6.	DESAFÍOS DE DESARROLLO
 
 Uno de los principales desafíos en el desarrollo de este sitio es la carga dinámica de contenido. El código HTML base no incluye las tarjetas del menú ni los detalles de las recetas. Estos elementos deben ser generados e insertados en el DOM (Document Object Model) mediante JavaScript, lo cual exige una lógica de programación robusta para asegurar que los datos se muestren correctamente y que la interacción del usuario con las tarjetas y los modales funcione sin errores.
+
 Además, el diseño responsivo del menú móvil presenta un desafío particular. Se debe asegurar que el botón del menú solo sea visible en dispositivos pequeños (md:hidden) y que el menú desplegable funcione correctamente sin afectar la navegación en pantallas grandes. El uso de la propiedad hidden y el addEventListener en JavaScript son cruciales para lograr esta funcionalidad.
 
 ---
